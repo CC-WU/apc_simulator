@@ -20,6 +20,11 @@
     - **measureService** is cron job which is triggered once with the period of **config.cron.measurePeriod**, the default number is ``10000ms``
     - **paramsService** is cron job which is triggered once with the period of **config.cron.paramsPeriod**, the default number is ``15000ms`` 
 
+- ## Monitor
+  - Prometheus: http://localhost:19090
+  - Grafana: http://localhost:13000
+  - Dokcer metrics: http://localhost:8001/metrics
+
 - ## Bonus
   - the **thickness factor** and **moisture factor** are stored in the memory cahce on ``global.cache`` of ``./src/index.js``. Is that possible to leverage MongoDB to store and retrieve this data?
   - there are two strategies (sharonStrategy and defaultStrategy) in ``./src/apcService/utilities/strategyUtil.js``, can you extent for more strategies to meet the requirement of more possibilities?
